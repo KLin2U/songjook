@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+	<style type="text/css">
+
+	body { line-height:1.6em }
+
+	</style>
+		<title>송죽 갤러리</title>
+	</head>
+	
+	<body
+		text="black"
+		bgproperties="fixed"
+		
+		topmargin="30"
+		leftmargin="30"
+		
+		link="blue"
+		vlink="purple"
+		alink="green"
+	>
+	
+	<h1 color="black" align="center">코로나19 실시간 상황</h1>
+	
+	<br>
+	<button onclick="printDate()">마지막 업데이트 시간</button><br>
+	<p id="date"></p>
+	<script>
+		function printDate() {
+			document.getElementById("date").innerHTML = Date();
+			}
+	</script>
+	<br>
+	
+	<h2 align="left">대한민국 확진자 현황</h2>
+	
+	<br>
+	
+	<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-wrg0{font-size:22px;text-align:center;vertical-align:top}
+.tg .tg-juvp{border-color:#000000;color:#f56b00;font-size:16px;text-align:center;vertical-align:top}
+.tg .tg-nxyb{border-color:#000000;color:#fe0000;font-size:20px;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-418g{border-color:#000000;font-size:20px;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-nxsy{border-color:#000000;color:#32cb00;font-size:20px;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-mqa1{border-color:#000000;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-fvz5{border-color:#000000;color:#f56b00;font-size:20px;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-dc5a{border-color:#000000;color:#3166ff;font-size:20px;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-gd5z{border-color:#000000;color:#fe0000;font-size:16px;text-align:center;vertical-align:top}
+.tg .tg-fx86{border-color:#000000;color:#fe0000;font-size:16px;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-2tu2{border-color:#000000;font-size:16px;text-align:center;vertical-align:top}
+.tg .tg-gdbc{border-color:#000000;color:#32cb00;font-size:16px;text-align:center;vertical-align:top}
+.tg .tg-dlag{border-color:#000000;color:#3166ff;font-size:16px;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-wrg0" colspan="9"><span style="font-weight:bold">대한민국 코로나19 8월 15일 현황</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-mqa1">누적 확진자</td>
+    <td class="tg-mqa1" colspan="2"> 신규 확진자</td>
+    <td class="tg-mqa1">사망자</td>
+    <td class="tg-mqa1">완치자</td>
+    <td class="tg-mqa1">잠정 치사율</td>
+    <td class="tg-mqa1">총검사자</td>
+    <td class="tg-mqa1">검사중</td>
+    <td class="tg-mqa1">결과음성</td>
+  </tr>
+  <tr>
+    <td class="tg-nxyb">15,039</td>
+    <td class="tg-mqa1">지역발생</td>
+    <td class="tg-mqa1">해외유입</td>
+    <td class="tg-418g">305</td>
+    <td class="tg-nxsy">13,901</td>
+    <td class="tg-418g" rowspan="2">2.03%</td>
+    <td class="tg-fvz5">1,675,296</td>
+    <td class="tg-dc5a">21,618</td>
+    <td class="tg-nxsy">1,638,639</td>
+  </tr>
+  <tr>
+    <td class="tg-gd5z">(+166)</td>
+    <td class="tg-fx86">+155</td>
+    <td class="tg-fx86">+11</td>
+    <td class="tg-2tu2">(0)</td>
+    <td class="tg-gdbc">(+38)</td>
+    <td class="tg-juvp">(+10,212)</td>
+    <td class="tg-dlag">(+1,486)</td>
+    <td class="tg-gdbc">(+8,560)</td>
+  </tr>
+</tbody>
+</table>
+
+	<br><br>
+
+	<h2 align="left">사회적 거리두기 현황</h2>
+	<font size = '4'><b>현재 경기과학고등학교가 위치한 수원시는 사회적 거리두기 <font size='6' color='blue'>2</font>단계입니다.</b></font><br>
+	<h4><font color='blue'>사회적 거리두기 2단계에서는...</font></h4>
+	<ul>
+	<li>불요불급한 외출, 모임, 다중이용시설 이용 자제</li>
+	<li>집합/모임/행사 : 실내 50인, 실외 100인 이상 금지</li>
+	<li>공공다중시설 : 운영 중단</li>
+	<li>민간다중시설 : 고위험시설 운영중단, 그 외 시설은 방역수칙 준수 강제화</li>
+	<li>스포츠행사 : 무관중 경기</li>
+	<li>학교/유치원/어린이집 : 등교 및 원격 수업. 단, 등교인원 축소</li>
+	<li>기관, 기업 : 유연, 재택근무 등을 통해 근무인원 제한 권고</li>
+	</ul>
+	<br>
+	<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-4gth{background-color:#3166ff;color:#ffffff;font-size:18px;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-bn4o{font-size:18px;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-qv16{font-size:16px;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-1uuw{background-color:#9b9b9b;color:#ffffff;font-size:18px;font-weight:bold;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-bn4o" colspan="3">대한민국 사회적 거리두기 현황</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-qv16">지역</td>
+    <td class="tg-qv16">시행 시기</td>
+    <td class="tg-qv16">단계</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">서울특별시, 경기도</td>
+    <td class="tg-baqh">08. 16 ~ </td>
+    <td class="tg-4gth">2</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">서울, 경기 제외 전국</td>
+    <td class="tg-baqh">06. 28 ~ </td>
+    <td class="tg-1uuw">1</td>
+  </tr>
+</tbody>
+</table>
+
+</html>
