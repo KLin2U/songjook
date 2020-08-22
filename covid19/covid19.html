@@ -8,6 +8,55 @@
 
 	</style>
 		<title>우한 코로나 상황판</title>
+		
+		  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		  <script type="text/javascript">
+			google.charts.load('current', {
+  packages: ['corechart', 'line']
+});
+google.charts.setOnLoadCallback(drawCurveTypes);
+
+function drawCurveTypes() {
+  var data = new google.visualization.DataTable();
+  data.addColumn('number', 'X');
+  data.addColumn('number', '일일');
+
+  data.addRows([
+    [1, 30],
+    [2, 30],
+    [3, 17],
+    [4, 23],
+    [5, 35],
+    [6, 47],
+    [7, 85],
+    [8, 155],
+    [9, 267],
+    [10, 188],
+    [11, 235],
+    [12, 283],
+    [13, 276],
+    [14, 315]
+  ]);
+
+  var options = {
+    hAxis: {
+      title: '날짜'
+    },
+    vAxis: {
+      title: '지역감염 확진자 수'
+    },
+    series: {
+      1: {
+        curveType: 'function'
+      }
+    }
+  };
+
+  var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+  chart.draw(data, options);
+}
+	</script>
+
 	</head>
 	
 	<body
@@ -127,18 +176,17 @@
     <td class="tg-fx86">+315</td>
     <td class="tg-fx86">+9</td>
     <td class="tg-2tu2">(+2)</td>
-    <td class="tg-gdbc">(+57)</td>
+    <td class="tg-gdbc">(+57)</td>S
     <td class="tg-juvp">(+20,040)</td>
     <td class="tg-dlag">(+3,047)</td>
     <td class="tg-gdbc">(+16,669)</td>
   </tr>
 </tbody>
 </table>
-
-	<br>
-	<img src="../image/0821covid.png" width="70%" title="COVID-19 Graph" align="center">
 	<br><br>
-
+	<h3 align='left'>최근 2주간 지역감염 확진자 수 변화</h3><br>
+	<div style="maxwidth: 800px" id="chart_div" ></div>
+	
 	<br><br>
 
 	<h2 align="left">사회적 거리두기 현황</h2>
@@ -200,7 +248,7 @@
   </tr>
 </tbody>
 </table>
-
+<br>
 단, 서울특별시는 집회에 한해서는 3단계 기준(10인 이상 금지) 적용
 
 </html>
