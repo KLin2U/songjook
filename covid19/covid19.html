@@ -7,55 +7,7 @@
 	body { line-height:1.6em }
 
 	</style>
-		<title>우한 코로나 상황판</title>
-		
-		  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-		  <script type="text/javascript">
-			google.charts.load('current', {
-  packages: ['corechart', 'line']
-});
-google.charts.setOnLoadCallback(drawCurveTypes);
-
-function drawCurveTypes() {
-  var data = new google.visualization.DataTable();
-  data.addColumn('number', 'X');
-  data.addColumn('number', '일일');
-
-  data.addRows([
-    [1, 315],
-    [2, 315],
-	[3, 387],
-	[4, 258],
-	[5, 264],
-	[6, 307],
-	[7, 434],
-	[8, 359],
-	[9, 308],
-    [10, 283],
-	[11, 238],
-	[12, 222],
-	[13, 253],
-	[14, 188]
-  ]);
-
-  var options = {
-    hAxis: {
-      title: '날짜'
-    },
-    vAxis: {
-      title: '지역감염 확진자 수'
-    },
-    series: {
-      1: {
-        curveType: 'function'
-      }
-    }
-  };
-
-  var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-  chart.draw(data, options);
-}
-	</script>
+		<title>코로나19 상황</title>
 
 	</head>
 	
@@ -73,20 +25,11 @@ function drawCurveTypes() {
 	
 	<h1 color="black">우한 코로나바이러스 감염증</h1>
 	<h2 color="black">(코로나바이러스감염증-19)</h2>
+	<h3 color="black">백신도 못 구한 채 '세계의 모범' 타령? 문재인式 K-방역의 희생자는 대한민국 국민!</h3>
 	<br>
 	
 	<font size='4' color='blue'><b>메인 페이지로 돌아가기 <a href="../index.html">[클릭]</a></b></font><br>
 
-	
-	<br>
-	<button onclick="printDate()">마지막 업데이트 시간</button><br>
-	<p id="date"></p>
-	<script>
-		function printDate() {
-			document.getElementById("date").innerHTML = Date();
-			}
-	</script>
-	<br>
 	
 	<style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -161,46 +104,34 @@ function drawCurveTypes() {
     <td class="tg-mqa1">결과음성</td>
   </tr>
   <tr>
-    <td class="tg-nxyb">20,644</td>
+    <td class="tg-nxyb">47,515</td>
     <td class="tg-mqa1">지역발생</td>
     <td class="tg-mqa1">해외유입</td>
-    <td class="tg-418g">329</td>
-    <td class="tg-nxsy">15,529</td>
-    <td class="tg-418g" rowspan="2">1.59%</td>
-    <td class="tg-fvz5">2,000,552</td>
-    <td class="tg-dc5a">55,524</td>
-    <td class="tg-nxsy">1,924,384</td>
+    <td class="tg-418g">645</td>
+    <td class="tg-nxsy">33,982</td>
+    <td class="tg-418g" rowspan="2">1.36%</td>
+    <td class="tg-fvz5">3,589795</td>
+    <td class="tg-dc5a">110,618</td>
+    <td class="tg-nxsy">3,431,662</td>
   </tr>
   <tr>
-    <td class="tg-gd5z">(+195)</td>
-    <td class="tg-fx86">+188</td>
-    <td class="tg-fx86">+7</td>
-    <td class="tg-2tu2">(+3)</td>
-    <td class="tg-gdbc">(+173)</td>
-    <td class="tg-juvp">(+20,257)</td>
-    <td class="tg-dlag">(-1,224)</td>
-    <td class="tg-gdbc">(+21,286)</td>
+    <td class="tg-gd5z">(+1,062)</td>
+    <td class="tg-fx86">+1,036</td>
+    <td class="tg-fx86">+26</td>
+    <td class="tg-2tu2">(+11)</td>
+    <td class="tg-gdbc">(+372)</td>
+    <td class="tg-juvp">(+50,955)</td>
+    <td class="tg-dlag">(+11,360)</td>
+    <td class="tg-gdbc">(+38,533)</td>
   </tr>
 </tbody>
 </table>
-	<br><br>
-	<h3 align='left'>최근 2주간 지역감염 확진자 수 변화</h3><br>
-	<div style="width: 700px" id="chart_div" ></div>
 	
 	<br><br>
 
 	<h2 align="left">사회적 거리두기 현황</h2>
-	<font size = '4'><b>현재 경기과학고등학교가 위치한 수원시는 사회적 거리두기 <font size='6' color='blue'>2.5</font>단계입니다. (단, 고3 제외 원격 수업 실시)</b></font><br>
-	<h4><font color='blue'>사회적 거리두기 2.5단계에서는...</font></h4>
-	<ul>
-	<li>불요불급한 외출, 모임, 다중이용시설 이용 자제</li>
-	<li>집합/모임/행사 : 실내 50인, 실외 100인 이상 금지</li>
-	<li>공공다중시설 : 필수시설 방역수칙 준수, 그 외 시설 운영 중단</li>
-	<li>민간다중시설 : 필수시설 방역수칙 준수, 고위험 시설 운영 중단, 중위험 및 그 외 시설 방역수칙 강제 준수, 오후 9시부터 다음날 새벽 5시까지 포장, 배달을 제외한 영업 금지</li>
-	<li>스포츠행사 : 무관중 경기</li>
-	<li>학교/유치원/어린이집 : 등교 인원 제한 (고등학교 2/3, 초중학교 1/3 이하)</li>
-	<li>기관, 기업 : 유연, 재택근무 등을 통해 근무인원 제한 권고</li>
-	</ul>
+	<font size = '4'><b>현재 경기과학고등학교가 위치한 수원시는 사회적 거리두기 <font size='6' color='blue'>2.5</font>단계입니다.</b></font><br>
+	<h4><font color='blue'>훠훠훠 3단계같은 2.5단계 하겠습니다</font></h4>
 	<br>
 	<style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -214,30 +145,5 @@ function drawCurveTypes() {
 .tg .tg-qv16{font-size:16px;font-weight:bold;text-align:center;vertical-align:top}
 .tg .tg-1uuw{background-color:#9b9b9b;color:#ffffff;font-size:18px;font-weight:bold;text-align:center;vertical-align:top}
 </style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-bn4o" colspan="3">대한민국 사회적 거리두기 현황</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-qv16">지역</td>
-    <td class="tg-qv16">시행 시기</td>
-    <td class="tg-qv16">단계</td>
-  </tr>
-  <tr>
-    <td class="tg-baqh">전국</td>
-    <td class="tg-baqh">8월 23일 ~ </td>
-    <td class="tg-4gth">2</td>
-  </tr>
-  <tr>
-	<td class="tg-baqh">서울, 경기도, 인천</td>
-	<td class="tg-baqh">8월 30일 ~ </td>
-	<td class="tg-4gth">2.5</td>
-</tbody>
-</table>
-<br>
-단, 서울특별시는 집회에 한해서는 3단계 기준(10인 이상 금지) 적용<br>
 
 </html>
